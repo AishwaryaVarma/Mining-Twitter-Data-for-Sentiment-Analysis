@@ -123,7 +123,7 @@ Sentiment Analysis refers to the process of taking natural language to identify 
 |Sentiment Analysis            |                                         |
 |----------------------------- | -----------------------------------------|
 |Text | If that is not cool enough for you than that is a you problem. |
-|Polarity | -0.0875 |
+|Polarity | -0.08756|
 |Subjectivity | 0.575 |
 |Classification | neg |
 |P_Pos | 0.944455873 |
