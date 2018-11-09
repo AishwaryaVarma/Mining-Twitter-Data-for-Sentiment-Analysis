@@ -1,6 +1,7 @@
 import json
 import re
 import operator 
+import tweepy
 from textblob import TextBlob
 from collections import Counter
 import nltk
