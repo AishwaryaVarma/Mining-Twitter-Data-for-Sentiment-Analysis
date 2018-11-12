@@ -4,6 +4,9 @@ Sentiment Analysis using tweepy,NLTK and Textblob
 Using OAuth to make connection twitter
 ```
 import tweepy
+import csv
+import re
+import pandas as pd
 from tweepy import OAuthHandler
  
 consumer_key = 'YOUR-CONSUMER-KEY'
@@ -126,10 +129,10 @@ Sentiment Analysis refers to the process of taking natural language to identify 
 |----------------------------- | -----------------------------------------|
 |Text | If that is not cool enough for you than that is a you problem. |
 |Polarity | -0.08756|
-|Subjectivity | 0.575 |
+|Subjectivity | 0.675 |
 |Classification | neg |
 |P_Pos | 0.944455873 |
-|P_Neg | 0.655544127 |
+|P_Neg | 0.755544127 |
 
 
 What does that mean?
@@ -138,9 +141,9 @@ What does that mean?
 
 
 To calculate the overall sentiment, we look at the polarity score:
-* Positive – from .01 to 1
-* Neutral – 0
-* Negative – from –.01 to -1
+* Positive = from .01 to 1
+* Neutral == 0
+* Negative = from –.01 to -1
 
 ```
 for line in f:
