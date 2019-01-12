@@ -141,7 +141,7 @@ What does that mean?
 
 
 To calculate the overall sentiment, we look at the polarity score:
-* Positive = from .01 to 1
+* Positive = from +.01 to +1
 * Neutral == 0
 * Negative = from –.01 to -1
 
