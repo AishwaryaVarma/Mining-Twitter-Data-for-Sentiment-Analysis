@@ -7,6 +7,7 @@ import tweepy
 import csv
 import re
 import pandas as pd
+import nltk
 from tweepy import OAuthHandler
  
 consumer_key = 'YOUR-CONSUMER-KEY'
