@@ -4,11 +4,13 @@ Sentiment Analysis using tweepy,NLTK and Textblob
 Using OAuth to make connection twitter
 ```
 import tweepy
+import numpy
 import csv
 import re
 import pandas as pd
 import nltk
 from tweepy import OAuthHandler
+from nlp import textblob
  
 consumer_key = 'YOUR-CONSUMER-KEY'
 consumer_secret = 'YOUR-CONSUMER-SECRET'
@@ -94,6 +96,7 @@ def tokenize(s):
 Removing stop-words,punctuations and rt,via words :
 ```
 from nltk.corpus import stopwords
+response=stop_words
 import string
 
 punctuation = list(string.punctuation)
@@ -124,7 +127,7 @@ with open(fname, 'r') as f:
 
 ####Python TextBlob Sentiment Analysis
 
-Sentiment Analysis refers to the process of taking natural language to identify and extract subjective information. You can take text, run it through the TextBlob and the program will spit out if the text is positive, neutral, or negative by analyzing the language used in the text.
+Sentiment Analysis refers to the process of taking natural language to identify and extract subjective information from an online mention. You can take text, run it through the TextBlob and the program will spit out if the text is positive, neutral, or negative by analyzing the language used in the text.
 
 |Sentiment Analysis            |                                         |
 |----------------------------- | -----------------------------------------|
@@ -137,13 +140,13 @@ Sentiment Analysis refers to the process of taking natural language to identify 
 
 
 What does that mean?
-* Polarity - a measure of the negativity, the neutralness, or the positivity of the text
+* Polarity - a measure of the negativity, the neutrality, or the positivity of the text
 * Classification - either pos or neg indicating if the text is positive or negative
 
 
 To calculate the overall sentiment, we look at the polarity score:
 * Positive = from +.01 to +1
-* Neutral == 0
+* Neutral == 0.00
 * Negative = from –.01 to -1
 
 ```
