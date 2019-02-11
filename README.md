@@ -6,6 +6,7 @@ Using OAuth to make connection twitter
 import tweepy
 import numpy
 import csv
+import random
 import re
 import pandas as pd
 import nltk
